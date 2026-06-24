@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset'
 import { hero } from '../data/content'
 
 export function Hero() {
@@ -8,7 +9,7 @@ export function Hero() {
         aria-hidden="true"
       >
         <img
-          src="/assets/hero-waterfall.png"
+          src={asset('assets/hero-waterfall.png')}
           alt=""
           className="h-full w-full object-cover object-center"
         />
