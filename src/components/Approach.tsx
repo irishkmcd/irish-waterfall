@@ -5,21 +5,21 @@ export function Approach() {
   const headlineLead = approach.headline.replace(approach.headlineAccent, '').trim()
 
   return (
-    <section id="approach" className="overflow-hidden bg-iw-cream py-24 md:py-32">
+    <section id="approach" className="overflow-hidden bg-iw-cream pt-16 md:pt-22 pb-12 md:pb-14">
       <div className="container-iw">
-        <div className="relative lg:grid lg:grid-cols-12 lg:items-center lg:gap-10">
+        <div className="relative lg:grid lg:grid-cols-12 lg:items-center lg:gap-8">
           <div className="relative z-10 lg:col-span-5 xl:col-span-5">
-            <div className="border-l-2 border-iw-gold py-2 pl-8 md:pl-10">
+            <div className="border-l-2 border-iw-gold py-1 pl-6 md:pl-8">
               <p className="section-label">{approach.eyebrow}</p>
-              <h2 className="section-heading mt-4">
+              <h2 className="section-heading mt-3">
                 {headlineLead}{' '}
                 <span className="italic text-iw-forest">{approach.headlineAccent}</span>
               </h2>
-              <p className="section-body mt-6">{approach.intro}</p>
+              <p className="section-body mt-4">{approach.intro}</p>
             </div>
           </div>
 
-          <div className="relative mt-12 lg:col-span-7 lg:mt-0 lg:translate-x-6 xl:translate-x-10">
+          <div className="relative mt-6 lg:col-span-7 lg:mt-0 lg:translate-x-6 xl:translate-x-10">
             <div className="relative aspect-[5/4] overflow-hidden sm:aspect-[4/3] lg:aspect-[5/4]">
               <img
                 src={approachImage.src}
@@ -48,17 +48,24 @@ export function Approach() {
           </div>
         </div>
 
-        <div className="mt-16 grid gap-px bg-iw-stone md:mt-24 md:grid-cols-3">
-          {approach.pillars.map((pillar) => (
+        <div className="mt-8 grid gap-px bg-iw-stone md:mt-10 md:grid-cols-3">
+          {approach.pillars.map((pillar) => {
+            const [titleLead, titleTail] = pillar.title.split(/ (?=[^ ]+$)/)
+
+            return (
             <article
               key={pillar.title}
-              className="flex min-h-[22rem] flex-col bg-iw-cream px-8 py-12 md:min-h-[24rem] md:px-10 md:py-14"
+              className="flex flex-col bg-iw-cream px-8 py-8 md:px-10 md:py-9"
             >
               <span className="card-numeral">{pillar.numeral}</span>
-              <h3 className="card-heading mt-6">{pillar.title}</h3>
-              <p className="card-body mt-5">{pillar.body}</p>
+              <h3 className="card-heading mt-3 leading-tight">
+                <span className="block">{titleLead}</span>
+                <span className="block">{titleTail}</span>
+              </h3>
+              <p className="card-body mt-3">{pillar.body}</p>
             </article>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

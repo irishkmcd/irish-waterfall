@@ -3,7 +3,7 @@ import { hero } from '../data/content'
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-end overflow-hidden bg-iw-deep pb-20 pt-32 md:pb-28 md:pt-40">
+    <section className="relative flex min-h-screen items-end overflow-hidden bg-iw-deep pb-16 pt-28 md:pb-20 md:pt-36">
       <div
         className="pointer-events-none absolute inset-y-0 right-0 w-full max-w-[min(52rem,72vw)]"
         aria-hidden="true"

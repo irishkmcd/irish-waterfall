@@ -5,7 +5,7 @@ import { ContactSection } from './ContactSection'
 export function Principal() {
   return (
     <>
-      <section id="principal" className="bg-iw-cream py-24 md:py-32">
+      <section id="principal" className="section-y bg-iw-cream">
         <div className="container-iw">
           <div className="grid gap-16 lg:grid-cols-[280px_1fr] lg:gap-20">
             <div className="flex flex-col items-center lg:items-start">

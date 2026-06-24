@@ -41,7 +41,7 @@ export const approach = {
     {
       numeral: 'III.',
       title: 'Aligned Sponsorship',
-      body: 'Three decades of execution and personal guarantees on select transactions. We invest beside our partners.',
+      body: 'Three decades of execution and co-investment on every deal. We invest beside our partners.',
     },
   ],
 } as const
@@ -112,7 +112,7 @@ export const partners = {
     },
     {
       value: 'Aligned',
-      label: 'Guarantees on Select Deals',
+      label: 'Sponsor Invests Alongside',
     },
   ],
 } as const
@@ -125,7 +125,7 @@ export const principal = {
   bio: [
     "Bill O'Connor founded Irish Waterfall to bring institutional discipline to private commercial real estate. Over a career spanning more than three decades, he has closed in excess of $1 billion in transactions — earning top national rankings at Marcus & Millichap and serving as Senior Vice President at CBRE.",
     'His focus has stayed consistent throughout: stabilized, income-producing assets, acquired below replacement cost with durable tenancy and contractual cash flow. That same conservative, income-first philosophy governs every Irish Waterfall acquisition.',
-    'Bill personally guarantees select transactions and invests alongside his partners, ensuring his interests are aligned with the investors he serves.',
+    'He invests alongside his partners in every transaction — aligned in capital, risk, and outcome.',
   ],
   cta: 'Begin a private conversation.',
   ctaSubtext:

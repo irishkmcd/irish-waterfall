@@ -41,6 +41,22 @@ body {
     @apply text-xs font-medium uppercase tracking-[0.35em] text-iw-gold;
   }
 
+  .section-y {
+    @apply py-16 md:py-22;
+  }
+
+  .section-intro {
+    @apply mx-auto max-w-3xl text-center md:max-w-4xl;
+  }
+
+  .section-intro-body {
+    @apply mx-auto mt-4 max-w-2xl md:mt-5;
+  }
+
+  .section-block-spacing {
+    @apply mt-10 md:mt-12;
+  }
+
   .hero-title {
     @apply max-w-4xl font-display text-4xl leading-[1.08] font-medium text-white md:text-5xl lg:text-[3.5rem] lg:leading-[1.06];
   }
@@ -70,19 +86,19 @@ body {
   }
 
   .card-heading {
-    @apply font-display text-2xl font-medium leading-snug text-iw-deep md:text-3xl;
+    @apply font-display text-3xl font-medium leading-snug text-iw-deep md:text-3xl;
   }
 
   .card-heading-inverse {
-    @apply font-display text-2xl font-medium leading-snug text-iw-gold-light md:text-3xl;
+    @apply font-display text-3xl font-medium leading-snug text-iw-gold-light md:text-3xl;
   }
 
   .card-body {
-    @apply text-base leading-relaxed text-iw-muted;
+    @apply text-lg leading-relaxed text-iw-muted md:text-base;
   }
 
   .card-body-inverse {
-    @apply text-base leading-relaxed text-white/65;
+    @apply text-lg leading-relaxed text-white/65 md:text-base;
   }
 
   .profile-name {
