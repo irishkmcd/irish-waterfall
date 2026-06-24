@@ -9,7 +9,7 @@ export function Principal() {
         <div className="container-iw">
           <div className="grid gap-16 lg:grid-cols-[280px_1fr] lg:gap-20">
             <div className="flex flex-col items-center lg:items-start">
-              <div className="h-56 w-56 overflow-hidden md:h-72 md:w-72">
+              <div className="h-72 w-72 overflow-hidden">
                 <img
                   src={principalHeadshot.src}
                   alt={principalHeadshot.alt}
