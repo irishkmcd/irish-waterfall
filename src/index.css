@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-iw-deep: #0c1f17;
+  --color-iw-forest: #1a3d2e;
+  --color-iw-moss: #2d5a45;
+  --color-iw-sage: #6b8f7a;
+  --color-iw-gold: #c4a962;
+  --color-iw-gold-light: #d4bc7a;
+  --color-iw-cream: #f4f1ea;
+  --color-iw-stone: #e8e4db;
+  --color-iw-muted: #5c6b63;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-iw-deep);
+  background: var(--color-iw-cream);
+}
+
+::selection {
+  background: var(--color-iw-gold);
+  color: var(--color-iw-deep);
+}
+
+@layer components {
+  .container-iw {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .section-label {
+    @apply text-xs font-medium uppercase tracking-[0.35em] text-iw-gold;
+  }
+
+  .hero-title {
+    @apply max-w-4xl font-display text-4xl leading-[1.08] font-medium text-white md:text-5xl lg:text-[3.5rem] lg:leading-[1.06];
+  }
+
+  .section-heading {
+    @apply font-display text-4xl leading-[1.1] font-medium text-iw-deep md:text-5xl;
+  }
+
+  .section-heading-inverse {
+    @apply font-display text-4xl leading-[1.1] font-medium text-white md:text-5xl;
+  }
+
+  .section-body {
+    @apply text-base leading-relaxed text-iw-muted md:text-lg;
+  }
+
+  .section-body-inverse {
+    @apply text-base leading-relaxed text-white/65 md:text-lg;
+  }
+
+  .card-numeral {
+    @apply font-display text-3xl leading-none text-iw-gold md:text-4xl;
+  }
+
+  .card-numeral-featured {
+    @apply font-display text-5xl leading-none font-medium text-iw-gold md:text-6xl;
+  }
+
+  .card-heading {
+    @apply font-display text-2xl font-medium leading-snug text-iw-deep md:text-3xl;
+  }
+
+  .card-heading-inverse {
+    @apply font-display text-2xl font-medium leading-snug text-iw-gold-light md:text-3xl;
+  }
+
+  .card-body {
+    @apply text-base leading-relaxed text-iw-muted;
+  }
+
+  .card-body-inverse {
+    @apply text-base leading-relaxed text-white/65;
+  }
+
+  .profile-name {
+    @apply font-display text-4xl font-medium text-iw-deep md:text-5xl;
+  }
+
+  .form-heading {
+    @apply font-display text-2xl font-medium text-iw-deep md:text-3xl;
+  }
+
+  .stat-value {
+    @apply font-display text-5xl font-medium text-iw-gold md:text-6xl lg:text-7xl;
+  }
+
+  .stat-label {
+    @apply text-xs font-medium uppercase leading-relaxed tracking-[0.25em] text-white/60;
+  }
+}
