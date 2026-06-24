@@ -55,7 +55,7 @@ export function Approach() {
             return (
             <article
               key={pillar.title}
-              className="flex flex-col bg-iw-cream px-8 py-8 md:px-10 md:py-9"
+              className="flex flex-col bg-iw-cream px-8 py-8 text-center md:px-10 md:py-9 md:text-left"
             >
               <span className="card-numeral">{pillar.numeral}</span>
               <h3 className="card-heading mt-3 leading-tight">
