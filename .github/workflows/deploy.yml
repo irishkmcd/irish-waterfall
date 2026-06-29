@@ -32,7 +32,6 @@ jobs:
       - run: npm run build
         env:
           GITHUB_PAGES: 'true'
-          VITE_MAINTENANCE_MODE: 'true'
 
       - uses: actions/upload-pages-artifact@v3
         with:
