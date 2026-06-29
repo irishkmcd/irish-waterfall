@@ -1,15 +1,14 @@
-import { asset } from '../lib/asset'
 import { hero } from '../data/content'
+import { HeroMedia } from './HeroMedia'
 
 export function Hero() {
   return (
     <section className="bg-iw-deep md:relative md:flex md:min-h-screen md:items-end md:overflow-hidden md:pb-20 md:pt-36">
       <div className="relative w-full pt-24 md:hidden" aria-hidden="true">
         <div className="relative aspect-[5/4] w-full overflow-hidden sm:aspect-[16/10]">
-          <img
-            src={asset('assets/hero-waterfall.png')}
-            alt=""
-            className="h-full w-full object-cover object-[center_40%]"
+          <HeroMedia
+            className="h-full w-full object-cover"
+            objectPosition="center 40%"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-iw-deep via-iw-deep/25 to-transparent" />
         </div>
@@ -19,11 +18,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-y-0 right-0 hidden w-full max-w-[min(52rem,72vw)] md:block"
         aria-hidden="true"
       >
-        <img
-          src={asset('assets/hero-waterfall.png')}
-          alt=""
-          className="h-full w-full object-cover object-center"
-        />
+        <HeroMedia className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-iw-deep via-iw-deep/20 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-iw-deep/60 via-transparent to-transparent" />
       </div>
