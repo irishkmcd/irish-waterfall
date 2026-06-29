@@ -5,13 +5,13 @@ export function Hero() {
   return (
     <section className="bg-iw-deep md:relative md:flex md:min-h-screen md:items-end md:overflow-hidden md:pb-20 md:pt-36">
       <div className="relative w-full md:hidden" aria-hidden="true">
-        <div className="relative aspect-[5/4] w-full overflow-hidden sm:aspect-[16/10]">
+        <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[16/11]">
           <HeroMedia
-            className="h-full w-full translate-y-6 object-cover sm:translate-y-8"
-            objectPosition="center 35%"
+            className="h-full w-full translate-y-2 object-cover sm:translate-y-3"
+            objectPosition="center 30%"
           />
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-iw-deep via-iw-deep/35 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[48%] bg-gradient-to-t from-iw-deep via-iw-deep/30 to-transparent"
             aria-hidden="true"
           />
         </div>
@@ -33,7 +33,6 @@ export function Hero() {
 
       <div className="container-iw relative z-10 pb-16 pt-8 md:pb-20 md:pt-0">
         <h1 className="hero-title">{hero.headline}</h1>
-        <p className="section-body-inverse mt-6 max-w-xl">{hero.intro}</p>
         <p className="mt-6 max-w-xl text-sm font-medium uppercase tracking-[0.2em] text-iw-gold md:text-base md:tracking-[0.25em]">
           {hero.tagline}
         </p>

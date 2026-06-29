@@ -16,8 +16,6 @@ export const navLinks = [
 
 export const hero = {
   headline: 'Disciplined Private Capital for Income-Producing Real Estate',
-  intro:
-    'Stabilized commercial real estate with contractual income, durable tenancy, and consistent monthly distributions.',
   tagline: 'Private real estate. Structured for income. Underwritten with discipline.',
 } as const
 
