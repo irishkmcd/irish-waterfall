@@ -29,8 +29,8 @@ export const propertyImages = [
 ] as const
 
 export const approachImage = {
-  src: asset('assets/real-estate/office-interior.webp'),
-  alt: 'Professional commercial office space with durable tenancy',
+  src: asset('assets/real-estate/approach-office.png'),
+  alt: 'Professional commercial conference room with durable tenancy',
 } as const
 
 export const principalHeadshot = {
