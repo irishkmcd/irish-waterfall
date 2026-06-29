@@ -2,7 +2,7 @@ export const site = {
   name: 'Irish Waterfall',
   tagline: 'Private Capital',
   location: 'West Bloomfield, Michigan',
-  email: "bill.o'connor2274@outlook.com",
+  email: 'bill.oconnor2274@outlook.com',
   phone: '248 563 6766',
 } as const
 

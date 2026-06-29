@@ -42,6 +42,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="mt-8 space-y-5">
       <input type="hidden" name="_subject" value="Irish Waterfall — New inquiry" />
       <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
       <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
       <div className="grid gap-5 sm:grid-cols-2">
