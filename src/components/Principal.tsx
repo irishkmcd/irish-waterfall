@@ -25,7 +25,7 @@ export function Principal() {
               </div>
             </div>
 
-            <div>
+            <div className="mx-auto w-72 lg:mx-0 lg:w-auto">
               <p className="section-label">{principal.eyebrow}</p>
               <h2 className="section-heading mt-2">{principal.headline}</h2>
               <div className="mt-5 space-y-4">
