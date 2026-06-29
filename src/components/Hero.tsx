@@ -4,7 +4,7 @@ import { HeroMedia } from './HeroMedia'
 export function Hero() {
   return (
     <section className="bg-iw-deep md:relative md:flex md:min-h-screen md:items-end md:overflow-hidden md:pb-20 md:pt-36">
-      <div className="relative w-full pt-24 md:hidden" aria-hidden="true">
+      <div className="relative w-full md:hidden" aria-hidden="true">
         <div className="relative aspect-[5/4] w-full overflow-hidden sm:aspect-[16/10]">
           <HeroMedia
             className="h-full w-full object-cover"
