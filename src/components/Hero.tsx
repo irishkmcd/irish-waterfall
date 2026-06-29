@@ -7,10 +7,13 @@ export function Hero() {
       <div className="relative w-full md:hidden" aria-hidden="true">
         <div className="relative aspect-[5/4] w-full overflow-hidden sm:aspect-[16/10]">
           <HeroMedia
-            className="h-full w-full object-cover"
-            objectPosition="center 40%"
+            className="h-full w-full translate-y-6 object-cover sm:translate-y-8"
+            objectPosition="center 35%"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-iw-deep via-iw-deep/25 to-transparent" />
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-iw-deep via-iw-deep/35 to-transparent"
+            aria-hidden="true"
+          />
         </div>
       </div>
 
